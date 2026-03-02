@@ -1,7 +1,7 @@
 {
     "name": "haxe-checkstyle",
     "displayName": "Haxe Checkstyle",
-    "version": "1.8.3-funkin",
+    "version": "1.9.0-funkin",
     "publisher": "vshaxe",
     "engines": {
         "vscode": "^1.20.0"
