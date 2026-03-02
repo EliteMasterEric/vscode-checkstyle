@@ -1,7 +1,7 @@
 {
     "name": "haxe-checkstyle",
     "displayName": "Haxe Checkstyle",
-    "version": "1.8.3",
+    "version": "1.8.3-funkin",
     "publisher": "vshaxe",
     "engines": {
         "vscode": "^1.20.0"
@@ -19,11 +19,6 @@
         "color": "#A84B38"
     },
     "badges": [
-        {
-            "url": "https://api.travis-ci.org/vshaxe/vscode-checkstyle.svg?branch=master",
-            "href": "https://travis-ci.org/vshaxe/vscode-checkstyle",
-            "description": "Travis CI Status"
-        }
     ],
     "devDependencies": {
         "lix": "^15.12.0"
