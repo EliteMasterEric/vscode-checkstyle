@@ -1,4 +1,4 @@
-# @install: lix --silent download "gh://github.com/EliteMasterEric/haxe-checkstyle#funkin" into checkstyle/2.8.5/github/funkin
+# @install: lix --silent download "gh://github.com/EliteMasterEric/haxe-checkstyle#funkin" into checkstyle/2.9.0/github/funkin
 -lib checkstyle
--cp ${HAXE_LIBCACHE}/checkstyle/2.8.5/github/funkin/src
--D checkstyle=4.3.0-rc.1
+-cp ${HAXE_LIBCACHE}/checkstyle/2.9.0/github/funkin/src
+-D checkstyle=2.9.0

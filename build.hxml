@@ -13,3 +13,5 @@ Main
 -lib hxargs
 -lib checkstyle
 -lib tokentree
+
+--macro include('checkstyle')

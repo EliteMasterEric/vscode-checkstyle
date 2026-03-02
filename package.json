@@ -1,7 +1,7 @@
 {
     "name": "haxe-checkstyle",
     "displayName": "Haxe Checkstyle",
-    "version": "1.9.0-funkin",
+    "version": "1.9.1-funkin",
     "publisher": "vshaxe",
     "engines": {
         "vscode": "^1.20.0"
@@ -77,7 +77,7 @@
         "onLanguage:haxe"
     ],
     "scripts": {
-        "vscode:prepublish": "haxe build.hxml",
+        "vscode:prepublish": "npx haxe build.hxml",
         "postinstall": "lix download"
     },
     "__metadata": {
