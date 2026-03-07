@@ -5313,22 +5313,24 @@
             "properties": {
                 "props": {
                     "properties": {
-                        "checkBinary": {
-                            "description": "whether to check binary (`0b10001001`) numbers",
-                            "propertyOrder": 2,
-                            "type": "boolean"
-                        },
-                        "ignoreNumbers": {
-                            "description": "list of long numbers to ignore during checks",
-                            "items": {
-                                "type": "number"
-                            },
+                        "decimalGroupSize": {
+                            "description": "for decimal numbers, the number of consecutive digits before it's a long number\n\t\tdefaults to `3`, where `1000` is a long number but `1_000` is valid\n\t\tuse `-1` to disable the check entirely",
                             "propertyOrder": 0,
-                            "type": "array"
+                            "type": "integer"
+                        },
+                        "fractionalGroupSize": {
+                            "description": "for floating point decimal numbers, the number of consecutive digits after the decimal pointbefore it's a long number\n\t\tfor example, where `1000` is a long number but `1_000` is valid\n\t\tdefaults to `-1` to disable the check\n\t\tuse `-1` to disable the check entirely",
+                            "propertyOrder": 1,
+                            "type": "integer"
+                        },
+                        "binaryGroupSize": {
+                            "description": "for binary numbers, the number of consecutive digits before it's a long number\n\t\tdefaults to `8`, where `0b101010101` is a long number but `0b1_01010101` is valid\n\t\tuse `-1` to disable the check entirely",
+                            "propertyOrder": 3,
+                            "type": "integer"
                         },
                         "severity": {
                             "description": "sets gravity of reported violations:\n\t- IGNORE = do not report violations, violations do not appear anywhere in output\n\t- INFO = all violations have info / lowest priority\n\t- WARNING = all violations have warning / medium priority\n\t- ERROR = all violations have error / highest priority",
-                            "propertyOrder": 3,
+                            "propertyOrder": 4,
                             "enum": [
                                 "INFO",
                                 "WARNING",
@@ -5337,10 +5339,10 @@
                             ],
                             "type": "string"
                         },
-                        "checkHexadecimal": {
-                            "description": "whether to check hexadecimal (`0x12345678`) numbers",
-                            "propertyOrder": 1,
-                            "type": "boolean"
+                        "hexadecimalGroupSize": {
+                            "description": "for hexadecimal numbers, the number of consecutive digits before it's a long number\n\t\tdefaults to `8`, where `0x123456789` is a long number but `0x1_2345678` is valid\n\t\tuse `-1` to disable the check entirely",
+                            "propertyOrder": 2,
+                            "type": "integer"
                         }
                     },
                     "description": "Checks that there are no long decimal numbers without separators.",
